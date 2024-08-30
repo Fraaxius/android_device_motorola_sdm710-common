@@ -182,14 +182,12 @@ PRODUCT_PACKAGES += \
     init.mdm.sh \
     init.mmi.chipset.rc \
     init.mmi.rc \
-    init.mmi.laser.sh \
     init.mmi.touch.sh \
     init.mmi.usb.rc \
     init.mmi.usb.sh \
     init.oem.hw.sh \
     init.qcom.class_core.sh \
     init.qcom.coex.sh \
-    init.qcom.crashdata.sh \
     init.qcom.early_boot.sh \
     init.qcom.efs.sync.sh \
     init.qcom.rc \
@@ -198,7 +196,6 @@ PRODUCT_PACKAGES += \
     init.qcom.sensors.sh \
     init.qcom.sh \
     init.qti.fm.sh \
-    init.qti.ims.sh \
     init.recovery.qcom.rc \
     init.target.rc \
     ueventd.qcom.rc
@@ -217,8 +214,7 @@ PRODUCT_PACKAGES += \
 # Display
 PRODUCT_PACKAGES += \
     android.hardware.graphics.composer@2.4-service \
-    android.hardware.graphics.mapper@3.0-impl-qti-display \
-    android.hardware.graphics.mapper@4.0-impl-qti-display \
+    android.hardware.graphics.mapper@2.0-impl-qti-display \
     android.hardware.memtrack@1.0-impl \
     android.hardware.memtrack@1.0-service \
     gralloc.sdm710 \
@@ -427,10 +423,6 @@ PRODUCT_PACKAGES += \
     android.hardware.secure_element@1.1.vendor \
     android.hardware.secure_element@1.0.vendor
 
-# Vendor libstdc++
-PRODUCT_PACKAGES += \
-    libstdc++.vendor
-
 # Vibrator
 PRODUCT_PACKAGES += \
     vendor.qti.hardware.vibrator.service
@@ -471,10 +463,6 @@ PRODUCT_BOOT_JARS += \
 PRODUCT_PACKAGES += \
     android.hardware.thermal@2.0-service.qti
 
-# Trust HAL
-PRODUCT_PACKAGES += \
-    vendor.lineage.trust@1.0-service
-
 # Update engine
 PRODUCT_PACKAGES += \
     update_engine \
@@ -494,14 +482,12 @@ PRODUCT_PRODUCT_VNDK_VERSION := current
 
 # Wifi
 PRODUCT_PACKAGES += \
-    android.hardware.wifi@1.0-service \
+    android.hardware.wifi-service \
     hostapd \
     libwpa_client \
     libwifi-hal-ctrl \
     libwifi-hal-qcom \
-    vendor.qti.hardware.wifi.hostapd@1.0.vendor \
-    vendor.qti.hardware.wifi.hostapd@1.1.vendor \
-    vendor.qti.hardware.wifi.supplicant@2.0.vendor \
+    vendor.qti.hardware.wifi.hostapd@1.2.vendor \
     vendor.qti.hardware.wifi.supplicant@2.1.vendor \
     WifiOverlay \
     wpa_supplicant \
