@@ -226,7 +226,7 @@ PRODUCT_PACKAGES += \
     libvulkan \
     memtrack.sdm710 \
     vendor.display.config@1.15.vendor \
-    vendor.qti.hardware.display.allocator-service \
+    vendor.qti.hardware.display.allocator@1.0-service \
     vendor.qti.hardware.display.mapper@1.1.vendor \
     vendor.qti.hardware.display.mapper@2.0.vendor \
     vendor.qti.hardware.display.mapper@3.0.vendor \
